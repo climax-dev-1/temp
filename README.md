@@ -323,31 +323,6 @@ flowchart LR
 ### Your Answer
 
 > "I always start the same way: observability first. Instrument the basic pipeline so you can see what's happening. Then build a simple RAG baseline and measure it. Then add complexity — agents, self-reflection, multi-pass extraction — only where the metrics show the gap.
->
-> Concretely: weeks 1-3 are foundation — tracing, basic RAG, golden dataset, eval harness in CI. Weeks 4-7 build the core intelligence. Weeks 8-10 add the multi-agent orchestration. Then hardening and optimization."
-
-```mermaid
-%%{init: {'theme': 'base', 'themeVariables': {'fontSize': '13px'}}}%%
-gantt
-    title Phased Delivery
-    dateFormat YYYY-MM-DD
-    axisFormat %b %d
-
-    section Foundation (Weeks 1-3)
-    Observability + basic RAG + eval harness    :a1, 2026-03-02, 21d
-
-    section Core Intelligence (Weeks 4-7)
-    Agentic RAG + extraction + doc processing   :b1, 2026-03-23, 28d
-
-    section Orchestration (Weeks 8-10)
-    Multi-agent pipeline + routing              :c1, 2026-04-20, 21d
-
-    section Hardening (Weeks 11-13)
-    Regression suite + human review             :d1, 2026-05-11, 21d
-
-    section Optimization (Weeks 14-16)
-    Caching + cost reduction                    :e1, 2026-06-01, 21d
-```
 
 ### Why This Order
 
